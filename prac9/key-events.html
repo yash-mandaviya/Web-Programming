@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Key Events </title>
+		<script>
+		function myFunction(){
+			var x = document.getElementById("char").value;
+			if (x == 'a' || x == 'A' || x == 'e' || x == 'E' 
+			|| x == 'i' || x== 'I' || x == 'o' || x == 'O' 
+			|| x == 'u' || x == 'U'){
+					document.body.style.backgroundColor = "red"; 
+					alert("It is a Vowel");
+				}else{
+					document.body.style.backgroundColor = "white";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		Enter a single letter: <input type="text" id="char" onkeyup="myFunction()">
+	</body>
+</html>

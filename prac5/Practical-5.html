@@ -1,0 +1,69 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practical 5</title>
+        <link rel="stylesheet" href="5_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div>
+                <h1 align="center">STUDENT REGISTRATION FORM</h1>
+<form>
+<fieldset>
+<legend><b>PERSONALIA: </legend>
+
+<b><label for='fname'>First Name: </label>
+<input type="text" align="center" id="fname" name="fname"><br><br> 
+
+<b><label for='lname'>Last Name: </label>
+<input type="text" align="center" id="lname" name="lname"><br><br> 
+
+<b><label for='email'>Email ID: </label>
+<input type="text" align="center" id="email" name="email"><br><br> 
+
+<b><label for='mobile'>Contact No. : </label>
+<input type="text" align="center" id="mobile" name="mobile" maxlength="10"><br><br> 
+
+<b><label for='address'>Address: </label>
+<textarea align="center" id="address" name="address" rows="2" cols="40"></textarea><br><br> 
+
+<b><label for='gender'>Gender: </label>
+Male<input type="radio" align="center" id="gender" name="sex" value="male"> 
+Female<input type="radio" align="center" id="gender" name="sex" value="female"><br><br> 
+
+</fieldset><br>
+
+<fieldset>
+<legend><b>CURRICULUM</legend>
+
+<b><label for='eno'>Enrollment No. : </label>
+<input type="text" align="center" id="eno" name="eno" maxlength="10"><br><br> 
+
+<b><label for="Branch">Select Branch: </label><select id="Branch" name="Branch"><br>
+<option value="-">Department</option>
+<option value="Computer">Computer</option>
+<option value="Mechanical">Mechanical</option>
+<option value="Electrical">Electrical</option>
+<option value="Civil">Civil</option>
+<option value="Civil">Automobile</option>
+</select>
+<br><br>
+
+<b>Select your appropriate skills:
+<br><input type="checkbox" name="language" value="Creative Thinking">Creative Thinking
+<input type="checkbox" name="language" value="Computer Modeling">Computer Modeling<br>
+<input type="checkbox" name="language" value="Higher Mathematics">Higher Mathematics
+<input type="checkbox" name="language" value="Communication Skills">Communication Skills
+</fieldset>
+<br><br>
+<center><input type="submit" value="Submit" onclick="alert('Form Submitted')"></center><br>
+</form>
+        </div>
+</body>
+</html>

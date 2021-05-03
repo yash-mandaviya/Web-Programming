@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<body align="center" background-image: linear-gradient(to right,yellow,red);>
+<h1 align="center">STUDENT REGISTRATION FORM</h1>
+<form>
+
+<fieldset>
+<legend><b>PERSONALIA: </legend>
+
+<b><label for='fname'>First Name: </label><br>
+<input type="text" align="center" id="fname" name="fname"><br><br> 
+
+<b><label for='lname'>Last Name: </label><br>
+<input type="text" align="center" id="lname" name="lname"><br><br> 
+
+<b><label for='email'>Email ID: </label><br>
+<input type="text" align="center" id="email" name="email"><br><br> 
+
+<b><label for='mobile'>Contact No. : </label><br>
+<input type="text" align="center" id="mobile" name="mobile" maxlength="10"><br><br> 
+
+<b><label for='address'>Address: </label><br>
+<textarea align="center" id="address" name="address" rows="2" cols="40"></textarea><br><br> 
+
+<b><label for='gender'>Gender: </label><br>
+Male<input type="radio" align="center" id="gender" name="sex" value="male"> 
+Female<input type="radio" align="center" id="gender" name="sex" value="female"><br><br> 
+
+</fieldset><br>
+
+<fieldset>
+<legend><b>CURRICULUM</legend>
+
+<b><label for='eno'>Enrollment No. : </label><br>
+<input type="text" align="center" id="eno" name="eno" maxlength="10"><br><br> 
+
+<b>Select your appropriate skills: <br>
+<br><input type="checkbox" name="language" value="Creative Thinking">Creative Thinking
+<input type="checkbox" name="language" value="Computer Modeling">Computer Modeling
+<input type="checkbox" name="language" value="Higher Mathematics">Higher Mathematics
+<input type="checkbox" name="language" value="Communication Skills">Communication Skills
+<br><br>
+<b><label for="Branch">Select Branch:<br> </label><select id="Branch" name="Branch"><br>
+<option value="-">Department</option>
+<option value="Computer">Computer</option>
+<option value="Mechanical">Mechanical</option>
+<option value="Electrical">Electrical</option>
+<option value="Civil">Civil</option>
+<option value="Civil">Automobile</option>
+</select>
+</fieldset>
+<br>
+<input type="submit" value="Submit" onclick="alert('Form Submitted')"><br>
+</form>
+</body>
+</html>

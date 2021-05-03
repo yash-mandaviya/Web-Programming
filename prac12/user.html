@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Database Activity</title>
+<style type="text/css">
+
+input, textarea, select { padding: 5px 10px;
+font-size: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<fieldset>
+<legend>Insert Student Record:</legend>
+<form method="post" action="Operation.php">
+<table cellspacing="5" cellpadding="2">
+<tr>
+<td>
+<lable>
+<b>Student Name:* </b>
+</lable>
+</td>
+<td>
+<input type="text" value="" placeholder="Your Name*" name="name" size="20" required>
+</td>
+</tr>
+
+<tr>
+<td>
+<lable>
+<b>Enrollment Number:*
+</b> </lable>
+</td>
+<td>
+<input type="text" name="enroll" placeholder="Enrollment Number* " required>
+</td>
+</tr>
+
+<tr>
+<td>
+<lable>
+<b>Address:* </b>
+</lable>
+</td>
+
+<td>
+<textarea name="address" id="" cols="30" rows="5" placeholder="Your Address*" required></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<lable>
+<b>Phone:* </b>
+</lable>
+</td>
+ 
+<td>
+<input type="tel" name="phone" placeholder="Phone Number* "required>
+</td>
+</tr>
+<tr>
+<td>
+<lable>
+<b>Gender:</b>
+</lable>
+</td>
+<td>
+<lable>
+<b>Male:</b>
+</lable>
+<input type="radio" name="gender" value="Male" checked>
+<lable>
+<b>Female:</b>
+</lable>
+
+<input type="radio" name="gender" value="Female">
+</td>
+</tr>
+
+<tr>
+<td>
+<lable>
+<b>Department:* </b>
+</lable>
+</td>
+
+<td>
+<select name="department">
+<option value="Automobile Enginnering">Automobile Enginnering</option>
+<option value="Computer Enginnering" selected>Computer Enginnering</option>
+<option value="Civil Enginnerng">Civil
+Enginnerng</option>
+<option value="Electrical Enginnering">Electrical
+Enginnering</option>
+<option value="Mechnical Enginnering">Mechnical Enginnering</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<lable>
+<b>Email:* </b>
+</lable>
+</td>
+<td>
+<input type="email" size="30" placeholder="Your Email*" name="email" required>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Submit" name="insertSubmit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</fieldset>
+</body>
+</html>

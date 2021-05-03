@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practical 6</title>
+        <script>
+                function alrt(){
+                        window.alert("This is an alert!!!");
+                }
+        </script>
+        <script>
+                function prmpt(){
+				user=prompt("Please enter your name:");
+                       		alert("Welcome "+user);
+			}
+        </script>
+        <script>
+                function cncl(){
+                        var txt;
+                        var r=confirm("Are you sure you want to delete item?");
+                        if(r == true){
+                                txt="You deleted the item!";
+                        }else{
+                                txt="You canceled the deletion!";
+                        }
+                        document.getElementById("demo").innerHTML=txt;
+                }
+        </script>
+</head>
+<body>
+        <button onclick="alrt()">Click me for alert</button>
+        <br><br>
+	<button onclick="cncl()">Press this button to delete item</button>
+	<br><br>
+        <button onclick="prmpt()">This is a Prompt Button</button>
+        <br><br>
+        <p id="demo"></p>
+</body>
+</html>
